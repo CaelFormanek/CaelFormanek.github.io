@@ -66,25 +66,65 @@ h3.section-title {
   color: #4a90e2;
 }
 
-/* Branding Section */
+/* Branding Section Styling */
 .branding {
   display: flex;
+  flex-wrap: wrap; /* Ensure elements stack on smaller screens */
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
 }
 
 .branding-content {
   display: flex;
-  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem; /* Space between text and image */
+  width: 100%; /* Make sure it spans the entire container */
 }
 
 .branding-text {
-  width: 50%;
+  width: 50%; /* Text takes up half the space */
+  text-align: left;
 }
 
+/* Branding Section Styling */
+.branding-text h2 {
+  margin-bottom: 1.5rem; /* Adds space below the heading */
+  font-size: 2rem; /* Optional: Adjust the font size if needed */
+  color: #4a90e2; /* Optional: If you'd like to match the header's color */
+}
+
+.branding-text p {
+  font-size: 1.1rem; /* Optional: Adjust font size for better readability */
+  line-height: 1.6; /* Optional: Increases line height for better text spacing */
+}
+
+
 .branding-image img {
-  width: 200px;
-  border-radius: 10px;
+  width: 100%;
+  max-width: 300px; /* Set max width for image to prevent it from becoming too large */
+  height: auto;
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .branding-content {
+      flex-direction: column; /* Stack text and image vertically on smaller screens */
+      text-align: center;
+  }
+
+  .branding-text {
+      width: 100%; /* Text takes up full width on smaller screens */
+      margin-bottom: 1rem; /* Space between text and image */
+  }
+
+  .branding-image img {
+      max-width: 80%; /* Allow image to be smaller on mobile for better visual balance */
+  }
 }
 
 /* Skills and Tools Layout */
@@ -108,10 +148,17 @@ h3.section-title {
   width: 120px; /* Same width to make the bubble circular */
 }
 
+/* Generic Image Styling for Skills and Tools */
 .skill-item img, .tool-item img {
   width: 100%; /* Image will now fill the width of the container */
   height: 100%; /* Image will now fill the height of the container */
-  object-fit: cover; /* Ensures the image covers the space without distorting */
+  object-fit: cover; /* Default to cover, but override for specific images */
+}
+
+/* Special Handling for MySQL Logo */
+.skill-item.mysql img, .tool-item.mysql img {
+  object-fit: contain; /* This ensures the MySQL logo will not get cut off */
+  object-position: center; /* Centers the image if there's empty space */
 }
 
 .skill-item:hover, .tool-item:hover {
