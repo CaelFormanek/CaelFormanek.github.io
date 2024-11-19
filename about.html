@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css"> <!-- Link to the separate CSS file for about page -->
 </head>
 <body>
     <header class="main-header">
-        <h1>About Me</h1>
-        <p>Learn more about my background, skills, and values.</p>
+        <div class="container">
+            <h1>About Me</h1>
+            <p>Learn more about my background, skills, and values.</p>
+        </div>
     </header>
 
     <nav class="navbar">
@@ -21,55 +23,93 @@
         </ul>
     </nav>
 
-    <main>
+    <main class="container">
         <!-- Personal Branding Section -->
         <section class="branding">
-            <h2>My Personal Branding</h2>
-            <p>
-                I craft innovative software solutions that transform ideas into user-friendly products, helping businesses grow and thrive in a dynamic world.  
-                My goal is to create meaningful and impactful experiences by solving complex challenges with simplicity and creativity. 
-                With a passion for continuous learning and adapting to new technologies, I aim to empower businesses to achieve their vision.
-            </p>
+            <div class="branding-content">
+                <div class="branding-text">
+                    <h2>My Personal Branding</h2>
+                    <p>
+                        I craft innovative software solutions that transform ideas into user-friendly products, helping businesses grow and thrive in a dynamic world.  
+                        My goal is to create meaningful and impactful experiences by solving complex challenges with simplicity and creativity. 
+                        With a passion for continuous learning and adapting to new technologies, I aim to empower businesses to achieve their vision.
+                    </p>
+                </div>
+                <div class="branding-image">
+                    <img src="images/branding-image.jpg" alt="Personal Branding">
+                </div>
+            </div>
         </section>
 
         <!-- Technical Skills Section -->
         <section class="skills">
-            <h3>Technical Skills</h3>
-            <ul>
-                <li>Frontend: HTML, CSS, JavaScript, React</li>
-                <li>Backend: Node.js, Express, Python, Django</li>
-                <li>Database: MongoDB, PostgreSQL, MySQL</li>
-                <li>Version Control: Git, GitHub</li>
-                <li>Testing: Jest, Mocha</li>
-            </ul>
+            <h3 class="section-title">Technical Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="images/python-logo.png" alt="Python">
+                </div>
+                <div class="skill-item">
+                    <img src="images/java-logo.png" alt="Java">
+                </div>
+                <div class="skill-item">
+                    <img src="images/c-logo.png" alt="C">
+                </div>
+                <div class="skill-item">
+                    <img src="images/cplusplus-logo.png" alt="C++">
+                </div>
+                <div class="skill-item">
+                    <img src="images/html-logo.png" alt="HTML">
+                </div>
+                <div class="skill-item">
+                    <img src="images/css-logo.png" alt="CSS">
+                </div>
+                <div class="skill-item">
+                    <img src="images/sql-logo.png" alt="SQL">
+                </div>
+                <div class="skill-item">
+                    <img src="images/react-logo.png" alt="JavaScript (React)">
+                </div>
+            </div>
         </section>
 
-        <!-- Tools and Software Proficiency -->
+        <!-- Tools & Technologies Section -->
         <section class="tools">
-            <h3>Tools & Software Proficiency</h3>
-            <ul>
-                <li>VS Code, Sublime Text</li>
-                <li>Docker, Kubernetes</li>
-                <li>Postman, Insomnia (API Testing)</li>
-                <li>Webpack, Babel</li>
-                <li>Figma, Adobe XD (UI/UX Design)</li>
-            </ul>
-        </section>
-
-        <!-- Project-Specific Skills -->
-        <section class="project-skills">
-            <h3>Project-Specific Skills</h3>
-            <ul>
-                <li>Agile Methodologies & Scrum</li>
-                <li>Responsive Web Design</li>
-                <li>API Integration & Development</li>
-                <li>Cloud Services (AWS, Azure)</li>
-                <li>Continuous Integration/Continuous Deployment (CI/CD)</li>
-            </ul>
+            <h3 class="section-title">Tools & Technologies</h3>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <img src="images/git-logo.png" alt="Git">
+                </div>
+                <div class="tool-item">
+                    <img src="images/github-logo.png" alt="GitHub">
+                </div>
+                <div class="tool-item">
+                    <img src="images/jira-logo.png" alt="Jira">
+                </div>
+                <div class="tool-item">
+                    <img src="images/springboot-logo.png" alt="Spring Boot">
+                </div>
+                <div class="tool-item">
+                    <img src="images/mockapi-logo.png" alt="mockAPI">
+                </div>
+                <div class="tool-item">
+                    <img src="images/mysql-logo.png" alt="MySQL">
+                </div>
+                <div class="tool-item">
+                    <img src="images/docker-logo.png" alt="Docker">
+                </div>
+                <div class="tool-item">
+                    <img src="images/vscode-logo.png" alt="Visual Studio Code">
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
+        <div class="social-links">
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Twitter</a>
+        </div>
         <p>&copy; 2024 [Your Name]. All rights reserved.</p>
     </footer>
 </body>
