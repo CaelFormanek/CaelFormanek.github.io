@@ -88,6 +88,7 @@ h2 {
   height: auto;
   object-fit: cover; /* Makes sure images fill the container without stretching */
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
 /* Responsive Design */
